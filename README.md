@@ -6,6 +6,14 @@ File structures are (pseudo-)illustrated in code blocks. A `//` following the fi
 
 ## Orgainized by content
 
+## Presentations
+
+Slides and reference materials for presentations can be found under `_slides`. Files are commonly named following the convention of `date-occassion-topic`.
+
+## Vim
+
+Vim-related contents can be found under `vim/`, including example codes for `.vimrc` files (not necessarily a full `.vimrc` file and use with your own edits) and vim plugins and settings (often seen under `~/.vim` on the operating system).
+
 ## Orgainized by occassions
 
 ### 20210723 Lab 10-min talk: vim tricks
