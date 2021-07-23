@@ -31,4 +31,4 @@ The following files are directly relevant to the talk:
       └ skeleton.sh
 ```
 
-The slides (as a PDF file) can be found here. 
+The slides (as a PDF file) can be found [here](_slides/20210723-lab10min-vimPlugin.pdf).
