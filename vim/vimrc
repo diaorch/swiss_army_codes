@@ -1,0 +1,26 @@
+" this is an example comment in vimrc. No closing quote
+
+" general appearance and typing
+set background=dark
+
+" option `tabstop` sets width of `tabs` in spaces
+" option `softtabstop` is relevant for editing tabs (refer to detail documentations)
+" option `expandtab` converts all tabs to spaces
+" options `shiftwidth` and `smarttab` deal with auto-indent
+set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
+
+" manual highlighting of special phrases
+augroup vimrc_todo
+    au!
+    au Syntax * syn match MyTodo /\v<(FIXME|NOTE[S]{0,1}|TODO|OPTIMIZE)/ containedin=ALL
+augroup END
+hi def link MyTodo Todo
+
+" loading file templates when creating new files with specific suffixes
+if has("autocmd")
+  augroup templates
+    autocmd BufNewFile *.sh 0r ~/.vim/templates/skeleton.sh
+    autocmd BufNewFile *.py 0r ~/.vim/templates/skeleton.py
+    autocmd BufNewFile *.R 0r ~/.vim/templates/skeleton.R
+  augroup END
+endif
